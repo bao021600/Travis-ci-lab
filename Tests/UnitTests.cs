@@ -65,17 +65,17 @@ namespace TravisCILab
         [Test]
         public void Multiply_Invalid()
         {
-            Assert.Throws<FormatException>(() => Program.Add("1", "a"));
-            Assert.Throws<FormatException>(() => Program.Add("a", "1"));
-            Assert.Throws<FormatException>(() => Program.Add("a", "a"));
+            Assert.Throws<FormatException>(() => Program.Multiply("1", "a"));
+            Assert.Throws<FormatException>(() => Program.Multiply("a", "1"));
+            Assert.Throws<FormatException>(() => Program.Multiply("a", "a"));
         }
 
         [Test]
         public void Multiply_Null()
         {
-            Assert.Throws<ArgumentNullException>(() => Program.Add("1", null));
-            Assert.Throws<ArgumentNullException>(() => Program.Add(null, "1"));
-            Assert.Throws<ArgumentNullException>(() => Program.Add(null, null));
+            Assert.Throws<ArgumentNullException>(() => Program.Multiply("1", null));
+            Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, "1"));
+            Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, null));
         }
         [Test]
         public void Divide_Valid()
